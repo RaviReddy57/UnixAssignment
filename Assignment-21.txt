@@ -1,0 +1,43 @@
+Create a simple script containing a single function. 
+This function should display a message to clearly indicate it was generated when the function was run. 
+Then, display another message outside the function clearly indicating it was generated outside of it.
+
+
+#!/bin/bash
+
+# Functions
+
+# Author:Ravi Reddy
+
+sum () {
+       return $(( $1 + $2 ))
+}
+sum 4 5
+echo $?
+
+9
+
+
+#!/bin/bash
+#Attempts to count number of lines of any command
+#nameof the script : count_pp
+
+declare -i count=0
+
+cunt_lines () {
+          while read -r; do
+             ((++count))
+          done
+         echo $count
+}
+
+$* | count_lines 
+echo $count
+
+output :
+
+/home/rsirigi/count_pp ls
+26
+0
+
+

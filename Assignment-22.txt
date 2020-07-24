@@ -1,0 +1,28 @@
+Create a script to demonstrate the visibility of variables and when they 
+are available within a script and its functions. Define a global variable, 
+a function that defines a local variable and then display both BEFORE calling the function, 
+call the function, then display both AFTER calling the function.
+
+#!/bin/bash
+#Attempts to count number of lines of any command
+#nameof the script : count_pp
+
+declare -i count=0
+
+cunt_lines () {
+          while read -r; do
+             ((++count))
+          done
+         echo $count
+}
+
+$* | count_lines 
+echo $count
+
+output :
+
+/home/rsirigi/count_pp ls
+26
+0
+
+

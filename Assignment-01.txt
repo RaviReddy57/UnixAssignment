@@ -1,0 +1,16 @@
+Create a script that, when run, will display the following environment variables to the console:
+
+USER
+HOME
+HISTCONTROL
+TERM
+
+Answer :
+
+#!/bin/bash
+
+# Script to display the environmnet varaibles to the console 
+# Author : Ravi Reddy
+
+echo $USER, $HOME, $HISTCONTROL, $TERM
+
